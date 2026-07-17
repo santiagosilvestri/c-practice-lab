@@ -25,7 +25,7 @@ bc
 ## Repository structure
 
 ```text
-42-C-Exam-Practice/
+C-Practice-Lab/
 ├── exercises/
 │   ├── 01-foundations/
 │   │   ├── 01.ft_strlen.c
