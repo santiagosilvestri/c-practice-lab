@@ -1,4 +1,4 @@
-# 42 C Exam Practice
+# C-Practice-Lab
 
 This project has been developed by **sasilves** as a personal collection of C exercises for exam preparation and continuous programming practice.
 
