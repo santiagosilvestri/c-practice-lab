@@ -17,6 +17,23 @@
 unsigned char	reverse_bits(unsigned char octet)
 {
 	unsigned char	result;
+	int				bits;
+
+	result = 0;
+	bits = 8;
+	while (bits > 0)
+	{
+		result = (result << 1) | (octet & 1);
+		octet = octet >> 1;
+		bits--;
+	}
+	return (result);
+}
+
+/* Entendiendo mascaras
+unsigned char	reverse_bits(unsigned char octet)
+{
+	unsigned char	result;
 
 	result = 0;
 	if (octet & 1)
@@ -35,23 +52,6 @@ unsigned char	reverse_bits(unsigned char octet)
 		result = result | 2;
 	if (octet & 128)
 		result = result | 1;
-	return (result);
-}
-/*
-V2
-unsigned char	reverse_bits(unsigned char octet)
-{
-	unsigned char	result;
-	int				bits;
-
-	result = 0;
-	bits = 8;
-	while (bits > 0)
-	{
-		result = (result << 1) | (octet & 1);
-		octet = octet >> 1;
-		bits--;
-	}
 	return (result);
 }
 */
